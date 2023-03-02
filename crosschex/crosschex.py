@@ -5,7 +5,7 @@ import threading
 from typing import Any, List
 
 import requests
-from config import get_settings
+from .config import get_settings
 from requests.adapters import HTTPAdapter
 
 API_EMPLOYEE_SEARCH = "employee/grid"
