@@ -4,7 +4,7 @@ import os
 class Config(object):
     """Base configuration."""
 
-    SETTINGS_DIR = os.path.abspath('.')  # This directory
+    SETTINGS_DIR = os.path.abspath('..')  # This directory
     APP_DIR = os.path.abspath(os.path.join(SETTINGS_DIR, os.pardir))  # Parent dir
     PROJECT_ROOT = os.path.abspath(os.path.join(APP_DIR, os.pardir))  # Parent dir
     SERVICE_NAME = os.environ.get("APP_NAME", "vfr")

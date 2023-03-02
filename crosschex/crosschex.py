@@ -5,9 +5,8 @@ import threading
 from typing import Any, List
 
 import requests
-from requests.adapters import HTTPAdapter
-
 from config import get_settings
+from requests.adapters import HTTPAdapter
 
 API_EMPLOYEE_SEARCH = "employee/grid"
 API_EMPLOYEE_FACE_UPDATE = "employee/attendance/face/update"
