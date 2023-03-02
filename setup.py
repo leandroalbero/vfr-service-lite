@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="vfr-service-lite",
+    name="vfrlite",
     version="0.0.1",
     author="Jobandtalent",
     author_email="leandro.albero@jobandtalent.com",
