@@ -1,0 +1,43 @@
+# bash
+.bash_history
+.local
+
+# Language: Python
+.coverage
+.cache
+.ipython
+.mypy_cache
+.pdbhistory
+.python_history
+__pycache__
+
+# MacOS
+.DS_Store
+
+# python enviroment
+venv
+
+# environment variables.
+.env
+
+# Pycharm
+.idea
+
+# codeship
+*.aes
+
+# Visual Studio Code
+/.vscode/
+/.vscode-server/
+/.gitconfig
+/.devcontainer
+
+# data
+data/downloads
+data/exports
+data/faces
+data/imports
+data/tmp/
+
+# redis
+flower
