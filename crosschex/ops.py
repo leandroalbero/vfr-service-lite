@@ -110,7 +110,7 @@ def print_report(pairs: list, unique: list, employee_id: int) -> None:
 
 
 def calculate_shifts(dataframe: pl.DataFrame) -> tuple[list, list]:
-    if len(dataframe) == 0:
+    if dataframe.height == 0:
         return [], []
     shifts = [
         y.rows()
