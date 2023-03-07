@@ -78,7 +78,7 @@ class CrossChexCloudAdapter(HTTPAdapter):
         )
         self.token = response.json()["data"]["token"]  # JWT token
         self.company_id = int(response.json()["data"]["company_id"])
-        print(f"Anviz API Cloud: user token created: {ACCOUNT_NAME}")
+        # print(f"Anviz API Cloud: user token created: {ACCOUNT_NAME}")
 
     def _list_company(self) -> None:
         payload = {}
@@ -90,7 +90,7 @@ class CrossChexCloudAdapter(HTTPAdapter):
             timeout=API_TIMEOUT,
         )
         self.company_cloud_id = response.json()["data"][0]["id"]  # company cloud id
-        print(f"Anviz API Cloud: company list: {self.company_cloud_id}")
+        # print(f"Anviz API Cloud: company list: {self.company_cloud_id}")
 
     def _select_company(self) -> None:
         payload = {"id": self.company_cloud_id}
@@ -103,7 +103,7 @@ class CrossChexCloudAdapter(HTTPAdapter):
         )
         # update token when select company
         self.token = response.json()["data"]["token"]  # JWT token
-        print(f"Anviz API Cloud: company select: {self.company_id}")
+        # print(f"Anviz API Cloud: company select: {self.company_id}")
 
     def get(self, path: str, **kwargs: Any) -> List:
         raise NotImplementedError
