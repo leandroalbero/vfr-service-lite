@@ -109,7 +109,7 @@ def print_report(pairs: list, unique: list, employee_id: int) -> None:
     print(colored("--------------------------------------------------------------", "grey"))
 
 
-def calculate_shifts(dataframe: pl.DataFrame) -> tuple[list, list]:
+def calculate_shifts(dataframe):
     if dataframe.height == 0:
         return [], []
     shifts = [
